@@ -1,0 +1,14 @@
+package Taller;
+import java.util.Scanner;
+public class Punto4 {
+
+    public static void main(String[] args) {
+        Scanner Teclado = new Scanner(System.in);
+        System.out.println("Ingrese Una palabra");
+        String str = Teclado.nextLine();
+        System.out.println("Ingrese cuantas letras quiere que aparescan");
+        int num= Teclado.nextInt();
+        CharSequence sub = str.subSequence(0, num);
+        System.out.println(sub);
+    }
+}
