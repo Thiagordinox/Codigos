@@ -1,0 +1,15 @@
+package Taller;
+
+import java.io.IOException;
+
+public class Punto1 {
+
+    public static void main(String[] args) throws IOException {
+        String s1 = "¿Conoces algún lugar donde aprender a programar gratis?.";
+        String myTarget = "gratis";
+        int index1 = s1.indexOf(myTarget);
+        int index2 = index1 + myTarget.length();
+        System.out.println(s1.substring(index1, index2));
+    }
+
+}
